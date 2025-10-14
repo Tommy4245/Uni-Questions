@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>App</h1>
+
+    <div id="courseSelect">
+      <h2>Select a Course</h2>
+      <div class="course-buttons">
+        <button class="course-btn" data-file="finc102.csv">FINC102</button>
+        <button class="course-btn" data-file="bsns114.csv">BSNS114</button>
+        <button class="course-btn" data-file="econ112.csv">ECON112</button>
+        <button class="course-btn" data-file="bsns112.csv">BSNS112</button>
+      </div>
+    </div>
+
+    <div id="quizArea" class="hidden">
+      <div class="scoreboard">
+        <span id="questionCounter">Question: 0/0</span>
+        <span id="correctCounter">✅ Correct: 0</span>
+        <span id="wrongCounter">❌ Wrong: 0</span>
+      </div>
+
+      <div id="questionBox"></div>
+      <div id="optionsBox"></div>
+      <p id="description"></p>
+
+      <button id="nextBtn" class="hidden">Next</button>
+      <button id="resetBtn">Reset Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

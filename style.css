@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #444;
+  }
+  
+  .course-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .course-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .course-btn:hover {
+    background: #1e40af;
+  }
+  
+  #quizArea {
+    margin-top: 20px;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #questionBox {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  #optionsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .option {
+    background: #f0f0f0;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option:hover {
+    background: #dfe8ff;
+  }
+  
+  .option.correct {
+    border-color: #22c55e;
+    background: #b9f6ca;
+    color: #065f46;
+    transform: scale(1.05);
+  }
+  
+  .option.wrong {
+    border-color: #ef4444;
+    background: #fecaca;
+    color: #7f1d1d;
+    transform: scale(0.95);
+  }
+  
+  #description {
+    font-style: italic;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #1e40af;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    #optionsBox {
+      grid-template-columns: 1fr;
+    }
+    .option {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }
+  
